@@ -53,7 +53,7 @@ class Result extends React.Component {
             console.log(this.state.medName);
             this.setState({message: `Search result for ${this.state.medName}`})
 
-            const url = `http://localhost:7000/api/medicineStocks/searchByName/${this.state.medName}`
+            const url = `https://protected-hamlet-25972.herokuapp.com/api/medicineStocks/searchByName/${this.state.medName}`
             console.log(url);
             axios.get(url)
                 .then(response => {

@@ -12,7 +12,7 @@ const SearchBar = () => {
     const [suggestions, setSuggestions] = useState([]);
     useEffect(() => {
         const loadMedicines = function () {
-            axios.get("http://localhost:7000/api/medicines/")
+            axios.get("https://protected-hamlet-25972.herokuapp.com/api/medicines/")
                 .then(response => {
                     // console.log(response.data.data);
                     setMedicines(response.data.data);

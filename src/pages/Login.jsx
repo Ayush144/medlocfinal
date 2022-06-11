@@ -52,7 +52,7 @@ export default function SignIn() {
         let jsonObj = JSON.parse(json);
         let email = jsonObj.email;
         let password = jsonObj.password;
-        axios.post(`http://localhost:7000/api/user/login`, { email, password })
+        axios.post(`https://protected-hamlet-25972.herokuapp.com/api/user/login`, { email, password })
             .then(response => {
                 if (response.status === 201) {
                     alert("login successfull");
