@@ -1,0 +1,28 @@
+import React from 'react'
+import { AiOutlineSearch } from 'react-icons/ai'
+import './Home.css'
+
+const home = () => {
+    return (
+        <div className='hero'>
+            <div className='content'>
+                {/* <h1>Be Present at Right Place.</h1> */}
+                <h1>Search the medicine shop at  your near location. </h1>
+                <p className='search-text'></p>
+                {/* <p className='search-text'> Search the medicine shop at  your near location. </p> */}
+                <form className='search'>
+                    <div>
+                        <input type='text' placeholder=' Enter the medicine..' />
+                    </div>
+                    <div className='radio'>
+                        <input type='radio' checked />
+                        <label>Buy</label>
+                        <button type='submit'><AiOutlineSearch className='icon' /></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    )
+}
+
+export default home

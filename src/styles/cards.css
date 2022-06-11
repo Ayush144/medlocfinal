@@ -1,0 +1,48 @@
+.cards {
+    width: 250px;
+    position: relative;
+    object-fit: fill;
+    height: 300px;
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid #dfe3e6;
+    margin-bottom: 3px;
+    /* border: 1px solid red; */
+  }
+  .cards:hover{
+    border-radius: 6px;
+    border: 1px solid #5651e5;
+  }
+  .image_box{
+      height: 80%;
+      /* border: 2px solid black; */
+  }
+.details{
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 233px;
+    left: 0;
+    /* align-items: center; */
+    /* border: 1px solid red; */
+}
+
+.details button{
+  /* background-color: white; */
+  background-image: linear-gradient(45deg, #5651e5 0%, #709dff 100%);
+  color: white;
+}
+.details button:hover{
+  /* background-color: white; */
+  background-image: linear-gradient(45deg, #5651e5 0%, #709dff 100%);
+  color: black;
+}
+
+/* https://onemg.gumlet.io/image/upload/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/v1536838061/Dupan_40mg_Tablet-strip-1.jpg */
+/* https://cdn01.pharmeasy.in/dam/products/I38396/cetrizine-10mg-knoll-tab-10s-2-1641304644.jpg */
+/* https://cdn01.pharmeasy.in/dam/products_otc/255432/rejunex-cd3-tab-3-1641533332.jpg */
+/* https://cdn01.pharmeasy.in/dam/products_otc/270620/digene-acidity-gas-relief-tablets-15s-mint-flavour-2-1651912594.jpg */
+
+
+/* https://cdn01.pharmeasy.in/dam/products_otc/I06462/dr-ortho-an-ayurvedic-medicine-oil-bottle-of-120-ml-1-1645456739.jpg */
+/* https://cdn01.pharmeasy.in/dam/products_otc/247965/dulcoflex-5mg-tablet-constipation-laxative-bowel-movement-regulator-1-strip-10-tablet-2-1643883551.jpg */

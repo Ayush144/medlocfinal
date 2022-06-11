@@ -1,0 +1,180 @@
+.hero {
+    /* background-color: rgba(211, 208, 238, 0.5); */
+    background-color: #fff;
+    color: #fff;
+    height: 90vh;
+    width: 100%;
+    position: relative;
+    margin-bottom: 4rem;
+    overflow-x: hidden;
+}
+
+/* .imghero:before {
+    content: '';
+    background: url('https://slidesigma.nyc/templatemonster/react/findpharma/assets/img/home-2/540x540.jpg') no-repeat center center/cover;
+    height: 7%;
+    width: 40%;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    /* border-radius: 52%; */
+    /* border: 1px solid rebeccapurple; */
+    /* z-index: 3;
+}  */
+
+.imghero{
+    position: absolute;
+    top: 100px;
+    right: 300px;
+    z-index: 9;
+    width: 27%;
+    /* border: 1px solid red; */
+}
+.imgdoc{
+    display: flex;
+    float: left;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.imghero2{
+    position: absolute;
+    margin-top: 20px;
+    width: 50%;
+    left: 0;
+    bottom: 0;
+    /* border: 1px solid rebeccapurple; */
+    /* height: ; */
+}
+.imgani{
+    display: flex;
+    float: left;
+    width: 100%;
+}
+
+.imghero3{
+    position: absolute;
+    top: 0;
+    right: -100px;
+    width: 60%;
+    height: 100%;
+}
+.imgani2{
+    display: flex;
+    float: right;
+    width: 100%;
+    height: 100%;
+    /* height: ; */
+}
+
+.hero .content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.hero h1 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    z-index: 7;
+    position: absolute;
+    left: 250px;
+    color: black;
+    top: 255px;
+}
+
+/* .hero .search-text {
+    margin: 1.5rem;
+    /* font-size: 1.4rem; */
+ 
+.search {
+        display: flex;
+        background-color: #fff;
+        z-index: 6;
+        color: #333;
+        justify-content: space-between;
+        /* align-items: center; */
+        width: 345px;
+        position: absolute;
+        left: 249px;
+        padding: 4px;
+        border-radius: 8px;
+        border: 1px solid rebeccapurple;
+    }
+
+.search input[type=text] {
+    border: transparent;
+    background-color: transparent;
+    font-size: 1.2rem;
+    padding: 8px;
+    /* border: 1px solid red; */
+    font-family: 'Raleway', sans-serif;
+}
+
+.search input[type=text]:focus {
+    outline: none;
+}
+
+.search label {
+    padding: 0 14px 0 8px;
+}
+
+.search .radio {
+    display: flex;
+    align-items: center;
+}
+
+.search button {
+    background-image: linear-gradient(45deg, #5651e5 0%, #709dff 100%);
+    border: 1px solid #5651e5;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 940px) {
+    .hero {
+        height: 70vh;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .search input[type=text] {
+        width: 100%;
+    }
+}
+
+.suggestions{
+    cursor: pointer;
+    margin-top: 1px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    padding:5px 10px;
+}
+
+.parent_suggestion{
+    border: 1px solid #5752e9;
+    background-color: rgb(116, 163, 213);
+    position: absolute;
+    left: 252px;
+    top: 347px;
+    font-weight: bold;
+    width: 340px;
+    border-radius: 8px;
+}
+
+.suggestions:hover{
+    background-color: #5651e5;
+    color: white;
+    font-weight: 1000;
+    border-radius: 8px;
+}

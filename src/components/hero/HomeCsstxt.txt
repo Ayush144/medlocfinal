@@ -1,0 +1,224 @@
+.hero {
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.hero:before {
+    content: '';
+    background: url('https://cdn.pixabay.com/photo/2015/12/06/18/28/capsules-1079838_960_720.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.hero .content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.hero h1 {
+    font-size: 2.0rem;
+    text-transform: capitalize;
+}
+
+.hero .search-text {
+    margin: 1.5rem;
+    /* font-size: 1.4rem; */
+}
+
+.search {
+    display: flex;
+    background-color: #fff;
+    color: #333;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.search input[type=text] {
+    border: transparent;
+    background-color: transparent;
+    width: 400px;
+    font-size: 1.2rem;
+    padding: 8px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.search input[type=text]:focus {
+    outline: none;
+}
+
+.search label {
+    padding: 0 14px 0 8px;
+}
+
+.search .radio {
+    display: flex;
+    align-items: center;
+}
+
+.search button {
+    background-image: linear-gradient(45deg, #5651e5 0%, #709dff 100%);
+    border: 1px solid #5651e5;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 940px) {
+    .hero {
+        height: 70vh;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .search input[type=text] {
+        width: 100%;
+    }
+}
+
+
+
+
+Pasted this below code after time of 3:43PM
+
+.hero {
+    /* background-color: rgba(211, 208, 238, 0.5); */
+    background-color: #fff;
+    color: #fff;
+    height: 90vh;
+    width: 100%;
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.imghero:before {
+    content: '';
+    background: url('https://slidesigma.nyc/templatemonster/react/findpharma/assets/img/home-2/635x450.jpg') no-repeat center ;
+    height: 75%;
+    width: 40%;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    /* border-radius: 52%; */
+    /* border: 1px solid rebeccapurple; */
+    z-index: 3;
+}
+
+.imghero2{
+    position: absolute;
+    margin-top: 20px;
+    width: 50%;
+    left: 0;
+    bottom: 0;
+    /* border: 1px solid rebeccapurple; */
+    /* height: ; */
+}
+.imgani{
+    display: flex;
+    float: left;
+    width: 100%;
+}
+
+.hero .content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.hero h1 {
+    font-size: 2.0rem;
+    text-transform: capitalize;
+    z-index: 7;
+    position: absolute;
+    left: 222px;
+    color: black;
+    top: 240px;
+}
+
+/* .hero .search-text {
+    margin: 1.5rem;
+    /* font-size: 1.4rem; */
+ 
+
+.search {
+    display: flex;
+    background-color: #fff;
+    z-index: 6;
+    color: #333;
+    justify-content: space-between;
+    /* align-items: center; */
+    position: absolute;
+    left: 200px;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.search input[type=text] {
+    border: transparent;
+    background-color: transparent;
+    width: 400px;
+    font-size: 1.2rem;
+    padding: 8px;
+    border: 1px solid red;
+    font-family: 'Raleway', sans-serif;
+}
+
+.search input[type=text]:focus {
+    outline: none;
+}
+
+.search label {
+    padding: 0 14px 0 8px;
+}
+
+.search .radio {
+    display: flex;
+    align-items: center;
+}
+
+.search button {
+    background-image: linear-gradient(45deg, #5651e5 0%, #709dff 100%);
+    border: 1px solid #5651e5;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 940px) {
+    .hero {
+        height: 70vh;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .search input[type=text] {
+        width: 100%;
+    }
+}
