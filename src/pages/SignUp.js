@@ -16,6 +16,7 @@ import './SignUp.css';
 import axios from 'axios'
 import Navbar from '../components/navbar/Navbar';
 import Footer from '../components/footer/Footer';
+import {useHistory} from "react-router-dom"
 
 function Copyright(props) {
   return (
@@ -33,6 +34,7 @@ function Copyright(props) {
 const theme = createTheme();
 
 export default function SignUp() {
+  const history=useHistory();
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -49,22 +51,28 @@ export default function SignUp() {
     });
     var json = JSON.stringify(object);
     console.log(json);
+    
+    console.log(object);
+    
+    const fullname= object.firstName + object.lastName;
+    const email=object.email;
+    const number=object.number;
+    const password=object.password;
+    const verifyPassword=object.password;
+    console.log(fullname,email,number,password);
 
-    axios
-      .post(`https://protected-hamlet-25972.herokuapp.com/routes/user`, { json })
+
+    axios.post(`http://localhost:7000/api/user/signin`, { fullname,email,password,verifyPassword })
       .then(res => {
         console.log(res.data.result);
         if (res.data.result === "success") {
           alert("Success!", res.data.message, "success")
+        }})
             .then(data => {
-               history.push("/login");
+              alert("Successfully Registered");
+               history.push("/");
 
-            });
-        } else if (res.data.result === "error") {
-          alert("Error!", res.data.message, "error");
-        }
-      })
-      .catch(error => {
+            }).catch(error => {
         console.log(error);
         alert("Error!", "Unexpected error", "error");
       });
