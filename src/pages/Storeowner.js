@@ -56,7 +56,7 @@ export default function Storeowner() {
     let password = jsonObj.password;
     let storeId = jsonObj.storeId;
 
-    axios.post(`http://localhost:7000/api/stores`, { email, contact_no, password, storeId })
+    axios.post(`https://protected-hamlet-25972.herokuapp.com/api/stores`, { email, contact_no, password, storeId })
       .then(res => {
         console.log(res);
         if (res.data.result === "success") {

@@ -34,7 +34,7 @@ const theme = createTheme();
 
 export default function SignUp() {
   const handleSubmit = (event) => {
-    //event.preventDefault();
+    event.preventDefault();
     const data = new FormData(event.currentTarget);
     console.log({
       email: data.get('email'),
@@ -51,13 +51,13 @@ export default function SignUp() {
     console.log(json);
 
     axios
-      .post(`http://localhost:7000/routes/user`, { json })
+      .post(`https://protected-hamlet-25972.herokuapp.com/routes/user`, { json })
       .then(res => {
         console.log(res.data.result);
         if (res.data.result === "success") {
           alert("Success!", res.data.message, "success")
             .then(data => {
-              // history.push("/login");
+               history.push("/login");
 
             });
         } else if (res.data.result === "error") {

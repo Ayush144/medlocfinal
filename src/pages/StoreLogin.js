@@ -51,7 +51,7 @@ export default function StoreLogin() {
         let jsonObj = JSON.parse(json);
         let contact_no = jsonObj.number;
         let password = jsonObj.password;
-        axios.post(`http://localhost:7000/api/stores/storeLogin`, { contact_no, password })
+        axios.post(`https://protected-hamlet-25972.herokuapp.com/api/stores/storeLogin`, { contact_no, password })
             .then(response => {
                 console.log(response);
                 if (response.status === 200) {
