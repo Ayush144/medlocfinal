@@ -62,7 +62,7 @@ export default function SignUp() {
     console.log(fullname,email,number,password);
 
 
-    axios.post(`http://localhost:7000/api/user/signin`, { fullname,email,password,verifyPassword })
+    axios.post(`https://protected-hamlet-25972.herokuapp.com/api/user/signin`, { fullname,email,password,verifyPassword })
       .then(res => {
         console.log(res.data.result);
         if (res.data.result === "success") {
