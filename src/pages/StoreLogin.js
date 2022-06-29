@@ -14,7 +14,7 @@ import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Navbar from '../components/navbar/Navbar';
 import Footer from '../components/footer/Footer';
-import {useNavigate} from 'react-router-dom';
+import {useHistory} from 'react-router-dom';
 import axios from 'axios';
 
 function Copyright(props) {
@@ -32,9 +32,10 @@ function Copyright(props) {
 
 
 const theme = createTheme();
-const history =useNavigate();
+
 
 export default function StoreLogin() {
+
     const history = useHistory();
     const handleSubmit = (event) => {
         event.preventDefault();
