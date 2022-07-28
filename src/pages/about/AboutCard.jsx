@@ -12,7 +12,7 @@ const AboutCard = () => {
             <img src='https://slidesigma.nyc/templatemonster/react/findpharma/assets/img/home-2/635x450.jpg' alt='' />
           </div>
           <div className='right row'>
-            <Heading subtitle='FIND ANYTHING' title='Benefits About Online Learning Expertise' />
+            <Heading subtitle='FIND ANYTHING' title='Benefits About Online Searching Medicine' />
             <div className='items'>
               {homeAbout.map((val) => {
                 return (
